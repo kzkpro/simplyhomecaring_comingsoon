@@ -107,6 +107,7 @@ h1,
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
+  min-width: 400px;
 }
 
 @media screen and (max-width: 576px) {
@@ -116,8 +117,10 @@ h1,
 }
 
 .container .right .mainInfo h1 {
-  font-size: 2em;
-  margin-left: 1em;
+  font-size: 2.2em;
+}
+.container .right .mainInfo h2 {
+  font-size: 1.6em;
 }
 
 @media screen and (max-width: 576px) {
@@ -200,7 +203,7 @@ h1,
 
 .container .right .icon-list .icon {
   margin-right: 1em;
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
 .container .right .icon-list .icon a {
@@ -223,7 +226,7 @@ h1,
   justify-content: center;
 }
 
-h1,
+h1, h2,
 .slogan,
 button,
 .form {
@@ -281,4 +284,26 @@ button,
 .linkedin::before {
   font-family: "Font Awesome 5 Brands";
   content: "\f08c";
+}
+
+
+.contact-box ul{
+  list-style: none;
+  position: relative;
+  display: inline-block;
+  text-align: left;
+}
+.contact-box li{
+  position: relative;
+}
+.contact-box li [class*="fa-"]{
+  position: absolute;
+  margin-left: -25px;
+  top: 5px;
+}
+.social-links{
+  min-width: 400px;
+}
+.icon-list{
+ 
 }
